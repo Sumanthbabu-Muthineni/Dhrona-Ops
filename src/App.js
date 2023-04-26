@@ -3,15 +3,15 @@ import VideoPage from './components/VideoPage';
 import LoginPage  from './components/LoginPage';
 import HomePage from './components/HomePage';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import CoursePage from './components/CoursePage';
 
-
-const App=()=> (
-  
+const App=()=>(
 <BrowserRouter>
     <Switch>
-    <Route exact path="/login"   component={LoginPage} />
-     <Route exact path="/"       component={HomePage} />   
-     <Route  exact path="/video" component={VideoPage} />   
+    <Route  path="/login"   component={LoginPage} />
+     <Route exact path="/"       component={HomePage} />  
+     <Route   path="/CoursePage" component={CoursePage} />    
+     <Route   path="/video" component={VideoPage} />   
     </Switch>
 </BrowserRouter>
 )
