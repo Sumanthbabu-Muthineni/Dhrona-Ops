@@ -1,10 +1,9 @@
 import { Component } from 'react'
 import {withRouter} from 'react-router-dom'
 import './index.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "bootstrap-icons/font/bootstrap-icons.css";
-import 'font-awesome/css/font-awesome.min.css';
-
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GoogleIcon from '@mui/icons-material/Google';
 
 class LoginPage extends Component{
 
@@ -19,17 +18,17 @@ LoginLeftContainer=()=>
             <div className="signup-sub-text">Don’t have an account? <a href="#" className="kk_link">Sign up for free</a></div>
             <a href="#" className="gb">
                <button className="google-btn">
-                <img src={require("../image/google-icon.svg")} alt="image not found" className="icon_btn"/>
+               <GoogleIcon/>
                 <span className="text-google">Sign in with Google</span>
                </button>
             </a>
             
             <a href="#" className="fb">
-               <button className="facebook-btn"> <i className="fa fa-facebook" style={{fontSize: 25}}></i>
+               <button className="facebook-btn"><FacebookIcon/>
                 <span className="text-facebook">Continue with Facebook</span></button>
             </a>
             <a href="#" className="lb">
-                <button className="linkedin-btn"> <i className="fa fa-linkedin" style={{fontSize: 25}}></i>
+                <button className="linkedin-btn"> <LinkedInIcon/>
                     <span className="text-linkedin">Sign in with Linkedln</span></button>
             </a>
 

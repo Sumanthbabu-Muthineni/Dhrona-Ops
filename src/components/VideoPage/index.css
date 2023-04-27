@@ -1,0 +1,14 @@
+.video-container{
+    background-color: #ffffff;
+    height: 100vh;
+    background-size: cover;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.quiz-container{
+  text-align: center;
+}
+
+
